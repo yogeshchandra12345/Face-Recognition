@@ -19,6 +19,9 @@ labels = np.asarray(labels, dtype=np.int32)
 
 model = cv2.face.LBPHFaceRecognizer_create()
 model.train(np.asarray(training_data), np.asarray(labels))
+# save the model to disk
+model.save('model.xml')
 
 print(" Model Training Complete !!!!! ")
+
 
