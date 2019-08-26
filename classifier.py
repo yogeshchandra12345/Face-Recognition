@@ -32,22 +32,22 @@ while True:
 
         if result[1] < 500:
             confidence = 100*(1 - result[1]/300)
-            display_string = '{} Confidence it is user'.format(str(int(confidence)))
-        cv2.putText(image, display_string, (100,200), cv2.FONT_HERSHEY_COMPLEX, fontScale=1, color=(250, 120, 255),
+            display_string = '{} Confidence the person is yogesh'.format(str(int(confidence)))
+        cv2.putText(image, display_string, (100,100), cv2.FONT_HERSHEY_COMPLEX, fontScale=1, color=(255, 0, 0),
                     thickness=2)
 
         if confidence > 75:
-            cv2.putText(image, "Face Matched", (250, 450), cv2.FONT_HERSHEY_COMPLEX, fontScale=1, color=(0, 255, 0),
+            cv2.putText(image, "Face Matched", (100, 450), cv2.FONT_HERSHEY_COMPLEX, fontScale=1, color=(0, 255, 0),
                         thickness=2)
             cv2.imshow('Face Cropper', image)
         else:
-            cv2.putText(image, "Face not Matched", (250, 450), cv2.FONT_HERSHEY_COMPLEX, fontScale=1, color=(0, 0, 255),
-                        thickness=2)
+            cv2.putText(image, "Face not Matched", (100, 450), cv2.FONT_HERSHEY_COMPLEX, fontScale=1,
+                        color=(0, 250, 200), thickness=2)
             cv2.imshow('Face Cropper', image)
 
     except Exception as e:
         print(e)
-        cv2.putText(image, "Face Not Found", (250, 450), cv2.FONT_HERSHEY_COMPLEX, fontScale=1, color=(0, 0, 255),
+        cv2.putText(image, "Face Not Found", (100, 100), cv2.FONT_HERSHEY_COMPLEX, fontScale=1, color=(0, 0, 255),
                     thickness=2)
         cv2.imshow('Face Cropper', image)
 
