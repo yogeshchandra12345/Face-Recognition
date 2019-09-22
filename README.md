@@ -9,8 +9,8 @@ Steps to build:
 Demo:
 
 ###### When the face is present in database.
-<img src="https://raw.githubusercontent.com/yogeshchandra12345/Face-Recognition/master/face_recognize_correct.png" width="500" height="250">
+<img src="https://raw.githubusercontent.com/yogeshchandra12345/Face-Recognition/master/face_recognize_correct.png" width="300" height="200">
 
 
 ###### When the face is not present in database.
-<img src="https://raw.githubusercontent.com/yogeshchandra12345/Face-Recognition/master/face_not_matched.png" width="500" height="250">
+<img src="https://raw.githubusercontent.com/yogeshchandra12345/Face-Recognition/master/face_not_matched.png" width="300" height="200">
